@@ -1,0 +1,109 @@
+﻿  PluginSdkProject1.cpp
+c:\users\tyler\desktop\plugin-sdk-master\injector\injector.hpp(441): warning C4244: 'return': conversion from 'uintptr_t' to 'int', possible loss of data
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\cpool.h(215): error C2338: Invalid structure size of CPool<int>
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(496): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2065: 'fnstcw': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2146: syntax error: missing ';' before identifier 'savemode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2065: 'get': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2146: syntax error: missing ';' before identifier 'fpu'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2065: 'fpu': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(498): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2146: syntax error: missing ';' before identifier 'fld'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2065: 'fld': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2146: syntax error: missing ';' before identifier 'dword'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2065: 'dword': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2146: syntax error: missing ';' before identifier 'ptr'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2065: 'ptr': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2065: 'load': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2146: syntax error: missing ';' before identifier 'rwreal'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(499): error C2065: 'rwreal': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'x'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'mov'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'mov': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'ax'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'ax': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'put': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'fpu'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'fpu': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2146: syntax error: missing ';' before identifier 'in'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): warning C5033: 'register' is no longer a supported storage class
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(501): error C2065: 'in': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2144: syntax error: 'int' should be preceded by ';'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2146: syntax error: missing ';' before identifier 'ah'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2065: 'ah': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C3688: invalid literal suffix 'ch'; literal operator or literal operator template 'operator ""ch' not found
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2065: 'in': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2146: syntax error: missing ';' before identifier 'truncate'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2065: 'truncate': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(502): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'mov'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'mov': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'workmode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'ax': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'make': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'ready'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'ready': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'to'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'to': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'set'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'set': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2146: syntax error: missing ';' before identifier 'fpu'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'fpu': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(504): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'fldcw'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'fldcw': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'workmode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'set': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'fpu'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'fpu': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'to'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'to': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2146: syntax error: missing ';' before identifier 'truncate'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'truncate': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(505): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'fistp'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'fistp': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'dword'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'dword': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'ptr'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'ptr': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'store': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'the'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'the': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2146: syntax error: missing ';' before identifier 'rwint32eger'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'rwint32eger': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2146: syntax error: missing ';' before identifier 'result'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(506): error C2065: 'result': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2146: syntax error: missing ';' before identifier 'fldcw'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2065: 'fldcw': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2146: syntax error: missing ';' before identifier 'savemode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2065: 'restore': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2146: syntax error: missing ';' before identifier 'fpu'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2065: 'fpu': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(508): error C2146: syntax error: missing ';' before identifier 'mode'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(507): error C2065: 'mode': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(508): error C2143: syntax error: missing ';' before '}'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C2065: 'FLD': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C2146: syntax error: missing ';' before identifier 'DWord'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C2065: 'DWord': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C2146: syntax error: missing ';' before identifier 'Ptr'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(522): error C2065: 'Ptr': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C2065: 'FISTP': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C2146: syntax error: missing ';' before identifier 'DWord'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C2065: 'DWord': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C2146: syntax error: missing ';' before identifier 'Ptr'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\rw\rwplcore.h(523): error C2065: 'Ptr': undeclared identifier
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\cmatrix.h(66): error C2338: Invalid structure size of CMatrix
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\ccolmodel.h(40): error C2821: first formal parameter to 'operator new' must be 'size_t'
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\ccolmodel.h(44): error C2338: Invalid structure size of CColModel
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\centity.h(138): error C2338: Invalid structure size of CEntity
+c:\users\tyler\desktop\plugin-sdk-master\plugin_vc\game_vc\centity.h(138): fatal error C1003: error count exceeds 100; stopping compilation
