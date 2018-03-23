@@ -5,6 +5,8 @@
 #include <shlobj.h>
 #include <windows.h>
 
+//this is the change
+
 using namespace plugin;
 
 class PluginSdkProject1 {
