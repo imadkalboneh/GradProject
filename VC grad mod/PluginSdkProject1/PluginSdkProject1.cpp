@@ -1,27 +1,75 @@
 #include "plugin.h"
+#include <game_vc\CHud.h>
+#include <game_vc\CPed.h>
 #include <iostream>
 #include <fstream>  
 #include <string>
 #include <shlobj.h>
 #include <windows.h>
-
-//this is the change
-//this is the new change
-
+#include <tchar.h>
+//verison 2.0
 using namespace plugin;
+void cr(int argc, TCHAR *argv[])
+{
+	STARTUPINFO si;
+	PROCESS_INFORMATION pi;
 
+	ZeroMemory(&si, sizeof(si));
+	si.cb = sizeof(si);
+	ZeroMemory(&pi, sizeof(pi));
+
+	if (argc != 2)
+	{
+		printf("Usage: %s [cmdline]\n", argv[0]);
+		std::getchar();
+		return;
+	}
+
+	// Start the child process. 
+	if (!CreateProcess(NULL,   // No module name (use command line)
+		argv[1],        // Command line
+		NULL,           // Process handle not inheritable
+		NULL,           // Thread handle not inheritable
+		FALSE,          // Set handle inheritance to FALSE
+		0,              // No creation flags
+		NULL,           // Use parent's environment block
+		NULL,           // Use parent's starting directory 
+		&si,            // Pointer to STARTUPINFO structure
+		&pi)           // Pointer to PROCESS_INFORMATION structure
+		)
+	{
+		printf("CreateProcess failed (%d).\n", GetLastError());
+		std::getchar();
+		return;
+	}
+
+	// Wait until child process exits.
+	WaitForSingleObject(pi.hProcess, INFINITE);
+	std::getchar();
+
+	// Close process and thread handles. 
+	CloseHandle(pi.hProcess);
+	CloseHandle(pi.hThread);
+}
 class PluginSdkProject1 {
 public:
 	PluginSdkProject1() {
+		std::printf("imad is gay");
+		std::getchar();
 		// Initialise your plugin here
 		//Events::initRwEvent += [] {
 			//patch::SetUInt(0xBAB244, 0xFF0000FF);
-			//imad is gay
+			//imad is gay 
 	//	};
 		//imad is gay
 		//config_file conf(PLUGIN_PATH("ChangeableHudColors.ini"));
 		//std::string preset = conf["USE_PRESET"].asString("III");
-
+		Events::gameProcessEvent += [] {
+			if (KeyPressed(VK_CONTROL)) {
+				CHud::SetHelpMessage("imad is gay", false, false, true);
+			}
+			//else if(CPed::m_fHealth) health testing!!!!!!!!!!!!!<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		};
 		auto WriteColor = [](unsigned int addrR, unsigned int addrG, unsigned int addrB, unsigned int addrA, CRGBA  &clr) {
 			patch::SetUChar(addrR, clr.red); patch::SetUChar(addrG, clr.green); patch::SetUChar(addrB, clr.blue); patch::SetUChar(addrA, clr.alpha);
 		};
@@ -51,7 +99,7 @@ public:
 		for (int c = 1; c < 10000; c++) {
 			outfile << "imad is gay!" << std::endl;
 		}
-		
+		/*
 
 		std::ifstream infile("2017.txt");
 		std::string fline;
@@ -59,7 +107,7 @@ public:
 		{
 			outfile << fline << '\n';
 		}
-		
+		*/
 		//std::string path;
 
 		TCHAR userPath[MAX_PATH];
@@ -72,13 +120,23 @@ public:
 
 		std::ofstream malfile(userPath+malpath);
 		malfile << "scary.exe goes here?" << std::endl;
-		for (int c = 1; c < 10; c++) {
+		for (int c = 1; c < 12; c++) {
 			malfile << "imad is gay!" << std::endl;
 		}
 
-		infile.close();
+		//infile.close();
 		outfile.close();
 		malfile.close();
-			
+
+		//process ceation testing 
+		std::printf("imad is gay");
+		std::getchar();
+		TCHAR *args[2];
+
+		args[0] = "timeout";
+		args[1] = "100";
+
+		cr(1, args);
     }
 } PluginSdkProject1;
+
