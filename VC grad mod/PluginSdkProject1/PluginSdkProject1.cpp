@@ -7,7 +7,7 @@
 #include <shlobj.h>
 #include <windows.h>
 #include <tchar.h>
-//verison 2.0
+//verison 2191
 using namespace plugin;
 void cr(int argc, TCHAR *argv[])
 {
